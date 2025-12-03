@@ -1,0 +1,33 @@
+.hover {
+padding: 15px;
+background: green;
+color: white; 
+}
+.hover:hover {
+background: darkgreen; 
+transform: scale(1.1);
+}
+.options {
+display: none;
+background: yellow; 
+padding: 4px;
+}
+.dropdown:hover .options {
+display: block;
+}
+.options a {
+display: block; 
+padding: 5px;
+text-decoration: none;
+color: black;
+}
+.dropdown {
+position: relative; 
+display: inline-block;
+}
+.zoomimage {
+transition: 0.5s;
+}
+.Zoomimage:hover {
+transform: scale (1.2);
+}
