@@ -1,15 +1,29 @@
 <!DOCTYPE html>
 <html>
 <body>
-<div class="dropdown">
-  <input type="checkbox" id="menu-toggle">
-  <label for="menu-toggle" class="menu-btn">Menu</label>
 
+<button class="hover">Button</button>
+
+<div class="dropdown">
+  <button class="menu-btn">Menu</button>
   <div class="options">
     <a href="#">Option 1</a>
     <a href="#">Option 2</a>
     <a href="#">Option 3</a>
     <a href="#">Option 4</a>
   </div>
+</div>
+
+<img src="img1.png" class="zoomimage">
+
+<script>
+  const menuBtn = document.querySelector(".menu-btn");
+  const options = document.querySelector(".options");
+
+  menuBtn.addEventListener("click", () => {
+    options.style.display = options.style.display === "block" ? "none" : "block";
+  });
+</script>
+
 </body>
 </html>
